@@ -37,3 +37,10 @@ int arr[3][3] = {
         cout << name[i] << "同学总分为：" << sum << endl;
     }
 ```
+
+-函数
+传递方式           函数定义                          调用方式             本质         就像是...
+值传递,            "void swap(int n1, int n2)",     "swap(a, b)",        拷贝副本,    修改复印件
+地址传递,          "void swap(int *n1, int *n2)",   "swap(&a, &b)",      操控地址,    顺着地址上门拆家
+引用传递,          "void swap(int &n1, int &n2)",   "swap(a, b)",        绑定别名,    给本人起个外号
+值传递不改变原值，很安全；引用传递高效修改，很推荐
