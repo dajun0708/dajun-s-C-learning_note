@@ -1,0 +1,41 @@
+#C++学习日记
+
+##2026-04-19
+
+-分文件编写
+1.创建.h头文件
+（1）库函数引用
+（2）函数声明：只写函数头，结尾加上；
+2.创建.cpp源文件
+（1）必须包含相对应的头文件，如#include ”swap.h“
+（2）编写函数体：把具体的函数功能写出来
+3.在main.cpp中调用
+（1）包含头文件：加上#include “swap.h”这样的头文件
+（2）直接调用：像用平时的普通函数一样使用就可以
+4.联合编译
+（1）进入.cpp所在的文件夹
+（2）让编译器同时读取所有的.cpp文件，例如在终端里输入g++ main.cpp swap.cpp -o my_program
+
+-指针变量和变量所占内存空间大小
+```cpp
+cout << sizeof(p) << endl;
+    cout << sizeof(int *) << endl;
+    cout << sizeof(char *) << endl;
+    cout << sizeof(float *) << endl;
+	cout << sizeof(double *) << endl;
+    cout << sizeof(int) << endl;
+    cout << sizeof(char) << endl;
+    cout << sizeof(float) << endl;
+	cout << sizeof(double) << endl;
+  ```
+  ```cpp
+  //输出
+  8
+8
+8
+4
+1
+4
+8
+```
+也就是说无论指针变量是啥，所占的内存空间都是8字节（64位系统）
