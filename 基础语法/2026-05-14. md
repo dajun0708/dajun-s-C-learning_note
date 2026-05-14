@@ -3,33 +3,5 @@
 
 -结构体嵌套
 ```cpp
-struct student
-{
-    string name;
-    int age;
-    int score;
-};
-
-struct teacher{
-    string name;
-    int age;
-    struct student stu;
-};
-
-int main() {
-
-    struct teacher t1;
-	t1.name = "老王";
-	t1.age = 40;
-
-	t1.stu.name = "张三";
-	t1.stu.age = 18;
-	t1.stu.score = 100;
-
-	cout << "教师 "<< " 姓名： " << t1.name << " 年龄： " << t1.age << endl;
-	
-	cout << "辅导学员 姓名： " << t1.stu.name << " 年龄：" << t1.stu.age << " 考试分数： " << t1.stu.score << endl;
-
-	return 0;
-}
+fawf
 ```
